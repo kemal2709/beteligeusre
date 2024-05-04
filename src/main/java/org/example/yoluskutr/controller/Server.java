@@ -33,7 +33,7 @@ public class Server {
         user.setIpAddress(ipAddress);
         user.setAgent(userAgent);
         userService.saveUser(user);
-        return new RedirectView("http://youtube.com");
+        return new RedirectView("https://main--elegant-tulumba-de14e0.netlify.app");
     }
     @GetMapping("/v1.0/api/download/user/get/{agent}")
     public ResponseEntity<ByteArrayResource> downloadExcel(@PathVariable String agent) {
